@@ -6,9 +6,9 @@ Although datasets, such as those on kaggle, are often in csv, Matlab and Octave 
 
 ### Getting Started
 `
-git clone https://github.com/curtisjhu/csv_to_txt.git \n
-cd csv_to_txt \n
-pipenv shell \n
+git clone https://github.com/curtisjhu/csv_to_txt.git\
+cd csv_to_txt\
+pipenv shell\
 pip install -e .
 `
 `
