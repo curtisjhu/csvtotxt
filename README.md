@@ -11,9 +11,9 @@ cd csv_to_txt
 pipenv shell
 pip install -e .
 ```
-`
+```
 csvtotxt example.csv
-`
+```
 
 ##### TODO
 - better installation documentation
