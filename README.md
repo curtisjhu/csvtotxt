@@ -6,15 +6,15 @@ Although datasets, such as those on kaggle, are often in csv, Matlab and Octave 
 
 ### Getting Started
 `
-git clone https://github.com/curtisjhu/csv_to_txt.git
-cd csv_to_txt
-pipenv shell
+git clone https://github.com/curtisjhu/csv_to_txt.git \n
+cd csv_to_txt \n
+pipenv shell \n
 pip install -e .
 `
 `
 csvtotxt example.csv
 `
 
-#####TODO
+##### TODO
 - better installation documentation
 - Change strings, or true and false statements...
