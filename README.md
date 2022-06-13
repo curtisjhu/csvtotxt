@@ -8,11 +8,18 @@ Although datasets, such as those on kaggle, are often in csv, Matlab and Octave 
 ```
 git clone https://github.com/curtisjhu/csv_to_txt.git
 cd csv_to_txt
-pipenv shell
-pip install -e .
+pip install .
 ```
 ```
 csvtotxt example.csv
+```
+
+
+**uninstall**
+```
+pip uninstall .
+cd ..
+rm -rf csv_to_txt
 ```
 
 ##### TODO
