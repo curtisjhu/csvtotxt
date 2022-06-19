@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+csvtotxt.egg-info/PKG-INFO
+csvtotxt.egg-info/SOURCES.txt
+csvtotxt.egg-info/dependency_links.txt
+csvtotxt.egg-info/entry_points.txt
+csvtotxt.egg-info/requires.txt
+csvtotxt.egg-info/top_level.txt

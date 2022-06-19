@@ -5,19 +5,20 @@ from setuptools import setup, find_packages
 # run `csvtotxt ...`
 
 setup(
-    name="csv_to_txt",
+    name="csvtotxt",
     version='0.0.1',
     author="Curtis J. Hu",
     author_email="curtis.hu688@gmail.com",
     license="MIT",
-    description="simple tool to build txt files from csv",
+    description="Simple tool to build txt files from csv",
     install_requires=[
         'click',
         'colorama'
     ],
+    py_modules=[],
     entry_points={
         'console_scripts': [
-            'csvtotxt=main:cli'
+            'csvtotxt=main.root:cli'
         ]
     }
 )

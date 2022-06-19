@@ -1,0 +1,3 @@
+[console_scripts]
+csvtotxt = main.root:cli
+

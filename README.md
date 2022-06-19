@@ -1,10 +1,10 @@
 # csv_to_txt
 Simple CLI tool to build txt files from csv
 
-### If you have trouble turning csv files into txt for Octave as datasets, you're in luck.
-Although datasets, such as those on kaggle, are often in csv, Matlab and Octave do not read well in csv. Hence, I've tried to easily convert files reliably into txt files for Octave and Matlab.
+### Little tool I use to convert and clean data for Octave ML usage.
+I think octave provides more intuition into how ML works at a mathematical level. I would like to use them with csv files.
 
-### Getting Started
+### My configurations for download
 ```
 git clone https://github.com/curtisjhu/csv_to_txt.git
 cd csv_to_txt
@@ -15,13 +15,9 @@ csvtotxt example.csv
 ```
 
 
-**uninstall**
+**Uninstall**
 ```
 pip uninstall .
 cd ..
 rm -rf csv_to_txt
 ```
-
-##### TODO
-- better installation documentation
-- Change strings, or true and false statements...

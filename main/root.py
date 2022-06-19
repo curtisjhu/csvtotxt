@@ -1,17 +1,24 @@
 import csv
 import os
 import click
-from .pandas import dropna, fillna, remove_duplicates, script
 
-@click.group()
-@click.command()
+@click.group(invoke_without_command=True)
 @click.argument("filename")
 def cli(filename):
+
     try:
         csv_file = os.path.abspath(filename)
         txt_file = os.path.splitext(csv_file)[0]+".txt"
 
-        with open(txt_file, 'w+') as output_file:
+        with open("pandas.py", 'w') as file:
+            file.writelines(["import pandas as pd\n\n",
+                            f"df = pd.read_csv('{csv_file}')\n",
+                            "# df.dropna()"])
+            file.close()
+        click.echo("File created.")
+
+
+        with open(txt_file, 'w') as output_file:
             with open(csv_file, 'r') as input_file:
                 reader = csv.reader(input_file)
                 header = next(reader)
@@ -25,11 +32,5 @@ def cli(filename):
         click.echo(click.style("Error occurred. Please check your path", fg='red'), err=True)
 
 
-
-cli.add_command(script)
-cli.add_command(remove_duplicates)
-cli.add_command(dropna)
-cli.add_command(fillna)
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     cli()
