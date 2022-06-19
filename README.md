@@ -6,9 +6,7 @@ I think octave provides more intuition into how ML works at a mathematical level
 
 ### My configurations for download
 ```
-git clone https://github.com/curtisjhu/csv_to_txt.git
-cd csv_to_txt
-pip install .
+pip install https://github.com/curtisjhu/csv_to_txt/dist/csvtotxt-0.0.1.tar.gz
 ```
 ```
 csvtotxt example.csv
@@ -17,7 +15,5 @@ csvtotxt example.csv
 
 **Uninstall**
 ```
-pip uninstall .
-cd ..
-rm -rf csv_to_txt
+pip uninstall csvtotxt
 ```

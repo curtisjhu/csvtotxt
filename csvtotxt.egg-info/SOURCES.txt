@@ -1,6 +1,8 @@
 LICENSE
 README.md
 setup.py
+csvtotxt/__init__.py
+csvtotxt/root.py
 csvtotxt.egg-info/PKG-INFO
 csvtotxt.egg-info/SOURCES.txt
 csvtotxt.egg-info/dependency_links.txt
